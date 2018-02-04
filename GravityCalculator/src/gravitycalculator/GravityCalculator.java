@@ -29,8 +29,8 @@ public class GravityCalculator {
         
         // Notation: x(t) = 0.5 × at^2 + vit + xi 
                 
-        finalPosition = 01  Qº.5*gravity*fallingTime*fallingTime+initialVelocity*fallingTime+initialPosition;
-        
+        finalPosition = 0.5*gravity*fallingTime*fallingTime+initialVelocity*fallingTime+initialPosition;
+        finalPosition = finalPosition - initialPosition;
         // double result = finalPosition / fallingTime;
                 
 
