@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Victor Michael       2018
+ * Unit1 Programming Assignment 
+ * Gravity Calculator
  */
 package gravitycalculator;
 
@@ -23,15 +23,17 @@ public class GravityCalculator {
 
 	double  fallingTime = 10.0; // time in seconds that the object falls
 
-	double  initialPosition = 1000.0; // Starting position in meters, the calculation will 		determine the ending position in meters
+	double  initialPosition = 0; // Starting position in meters, the calculation will 		determine the ending position in meters
 
 	double  finalPosition;
         
-        // Notation: x(t) = 0.5 × at^2 + vit + xi 
+        // Function Notation: x(t) = 0.5 × at^2 + vit + xi 
                 
-        finalPosition = 0.5*gravity*fallingTime*fallingTime+initialVelocity*fallingTime+initialPosition;
-        finalPosition = finalPosition - initialPosition;
-        // double result = finalPosition / fallingTime;
+        // Converting the function notation into 
+        // x(fallingtime) = 0.5 x gravity x (fallingTime*fallingTime) + initialVelocity x fallingTime + initialPosition
+        finalPosition = 0.5*gravity*(fallingTime*fallingTime)+initialVelocity*fallingTime+initialPosition;
+        
+        
                 
 
 	System.out.println("The object's position after " + fallingTime +" seconds is 			"+finalPosition + " m.");
